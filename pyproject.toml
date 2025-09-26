@@ -1,6 +1,8 @@
 [project]
 name = "true-connect"
 version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.13"
 description = "FastAPI user-profile CRUD"
 dependencies = [
   "fastapi>=0.95.0",
@@ -12,6 +14,11 @@ dependencies = [
 ]
 
 [tool.uv]
+
+[tool.uv.workspace]
+members = [
+    "true-connect",
+]
 # Optional uv configuration placeholder.
 
 [build-system]

@@ -1,43 +1,7 @@
-# true-connect — FastAPI user-profile CRUD
+# true-connect — user-profile CRUD
 
 This document contains a complete, ready-to-run FastAPI project codebase named `true-connect` for profile CRUD operations. It includes: Dockerfile, docker-compose, `uv`-friendly pyproject, pytest tests, Pydantic models, SQLModel (with Alembic migrations), and helpful scripts.
 
----
-
-## Project layout
-
-```
-true-connect/
-├── README.md
-├── Dockerfile
-├── docker-compose.yml
-├── pyproject.toml
-├── Makefile
-├── .env.example
-├── alembic.ini
-├── alembic/
-│   ├── env.py
-│   └── versions/
-├── app/
-│   ├── __init__.py
-│   ├── main.py
-│   ├── core.py
-│   ├── db.py
-│   ├── models.py
-│   ├── crud.py
-│   ├── api/
-│   │   ├── __init__.py
-│   │   └── v1/
-│   │       ├── __init__.py
-│   │       └── profiles.py
-│   └── schemas.py
-├── tests/
-│   ├── conftest.py
-│   └── test_profiles.py
-└── requirements.txt  # optional (uv uses pyproject.toml)
-```
-
----
 
 > Note: This project is configured to use `uv` (https://astral.sh/uv) as the recommended way to initialize and manage the project. See **README.md** for `uv init` commands and developer instructions.
 
